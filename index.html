@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1><span id="A">A</span>desh.</h1>
+            <!-- <img src="logo.png" class="logo"> -->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a> </li>
+                <li><a href="#about">About</a> </li>
+                <li><a href="#services">Services</a> </li>
+                <li><a href="#portfolio">Portfolio</a> </li>
+                <li><a href="#contact">Contact Me</a> </li>
+                <i class="fas fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text"></div>
+            <p>Java Developer</p>
+            <h1>Hi I'm <span id="name">Adesh</span><br>Ugale From Maharashtra</h1>
+    </div>
+</div>
+<!-- About Me -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I have completed my graduation in Bachelor of Civil Engineering from Pune University in 2023. 
+                    I am belong's to civil branch,but I am more interested in Software develoment than core.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experince')">Experince</p>
+                    <p class="tab-links" onclick="opentab('eduction')">Eduction</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Java Developer</span><br>Java,Advanced java</li>
+                        <li><span>Frontend Developer</span><br>HTML,CSS,JavaScript,Bootstrap</li>
+                        <li><span>Backend Developer</span><br> Designing Websites</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experince">
+                    <ul>
+                       <li><span>Fresher</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="eduction">
+                    <ul>
+                        <li><span>2023</span><br>Bachelor of Engineering:8.2 CGPA</li>
+                        <li><span>2019</span><br>HSC:70.46%</li>
+                        <li><span>2017</span><br> SSC:89.20</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1> 
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>fggfkjhg fsdfdfsd dfasdfsdf  fsdfafs dfsdfsdfaef dfedffe fwefweef e erwerwer erewrwet werwer</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-uikit"></i>
+                <h2>UI Design</h2>
+                <p>fggfkjhg fsdfdfsd dfasdfsdf  fsdfafs dfsdfsdfaef dfedffe fwefweef e erwerwer erewrwet werwer</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>fggfkjhg fsdfdfsd dfasdfsdf  fsdfafs dfsdfsdfaef dfedffe fwefweef e erwerwer erewrwet werwer</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1> 
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you the talented people around the world.Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you the talented people around the world.Download it from play store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you the talented people around the world.Download it from play store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- Contact Form -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> adeshugale10@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 7083373943</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter your Email" required>
+                    <textarea name="message" rows="6" placeholder="Enter your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>    
+                </form>
+                <span id="meg">Hello</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Adesh. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorial</p>
+    </div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+
+    var sidemeu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+
+</script>
+</body>
+</html>
